@@ -1,0 +1,20 @@
+<!-- src/app/items/items.component.html -->
+
+<div>
+    <h2>Items</h2>
+    <ul>
+      <li *ngFor="let item of items">
+        {{ item.name }} - {{ item.description }}
+        <button (click)="updateItem(item.id, 'Updated Name', 'Updated Description')">Update</button>
+        <button (click)="deleteItem(item.id)">Delete</button>
+      </li>
+    </ul>
+  
+    <h3>Add New Item</h3>
+    <form (submit)="addItem()">
+      <input [(ngModel)]="newItem.name" placeholder="Name" name="name" required>
+      <input [(ngModel)]="newItem.description" placeholder="Description" name="description">
+      <button type="submit">Add</button>
+    </form>
+  </div>
+  
