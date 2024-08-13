@@ -1,0 +1,4 @@
+1.First, make sure that Bootstrap is installed in your Angular project. Run the following command in your project directory:
+npm install bootstrap
+# This will install Bootstrap in your node_modules directory.
+

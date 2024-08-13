@@ -5,12 +5,16 @@ import { FormsModule } from '@angular/forms';  // Import FormsModule
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ItemsComponent } from './items/items.component';
-import { ItemService } from './item.service';  // Import the service
+import { ItemService } from './item.service';
+import { ApiComponent } from './api/api.component';
+import { NotFoundComponent } from './not-found/not-found.component';  // Import the service
 
 @NgModule({
   declarations: [
     AppComponent,
-    ItemsComponent
+    ItemsComponent,
+    ApiComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
